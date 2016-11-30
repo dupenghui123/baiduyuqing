@@ -2,6 +2,12 @@ $(function(){
     var cliH=$(window).height();
     var num=0;
     var flag=true;
+    $("#images").onmousedown=function(e){
+        e.preventDefault();
+    }
+    $("#images").onmousemove=function(e){
+        e.preventDefault();
+    }
    touch.on("body","swipeup","#images",function(e){
        e.preventDefault();
        if(!flag){
@@ -15,7 +21,7 @@ $(function(){
        flag=false;
        $("#images").css({marginTop:-num*cliH});
    })
-    touch.on("body","swipedown","#images",function(){
+    touch.on("body","swipedown","#images",function(e){
         e.preventDefault();
         if(!flag){
             return;

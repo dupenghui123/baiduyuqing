@@ -306,7 +306,6 @@ section:nth-child(4){
 .fill-center{
     width: 500px;
     height: 126px;
-    border: 1px solid red;
     position: absolute;
     top: 200px;
     left: 200px;
@@ -408,7 +407,7 @@ section:nth-child(4){
 }
 .fill-center .obj-stat{
     background: url(../img/5.png)no-repeat;
-    width: 344px;
+    width: 384px;
     height: 427px;
     position: absolute;
     left: 540px;
